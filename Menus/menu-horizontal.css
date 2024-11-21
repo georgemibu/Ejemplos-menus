@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu-horizontal{
+    display:flex;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu-horizontal li {
+    margin: 0 15px;
+}
+
+.menu-horizontal a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.menu-horizontal a:hover {
+    background-color: #555;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .tabs {
+      display: flex;
+      cursor: pointer;
+    }
+    .tab {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: 1px solid #222;
+      margin-right: 5px;
+    }
+    .tab:hover {
+      background-color: #555;
+    }
+    .tab-content {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+  <script>
+    function showTabContent(tabIndex) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach((content, index) => {
+        content.classList.toggle('active', index === tabIndex);
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab" onclick="showTabContent(0)">Tab 1</div>
+    <div class="tab" onclick="showTabContent(1)">Tab 2</div>
+    <div class="tab" onclick="showTabContent(2)">Tab 3</div>
+  </div>
+  <div class="tab-content active">Contenido de Tab 1</div>
+  <div class="tab-content">Contenido de Tab 2</div>
+  <div class="tab-content">Contenido de Tab 3</div>
+</body>
+</html>

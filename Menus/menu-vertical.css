@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu-vertical {
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    padding: 10px;
+    list-style: none;
+}
+
+.menu-vertical li {
+    margin-bottom: 10px;
+}
+
+.menu-vertical a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.menu-vertical a:hover {
+    background-color: #555;
+}

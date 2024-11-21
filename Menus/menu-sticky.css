@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu-sticky{
+    position: sticky;
+    top:0;
+    background-color: #333;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-sticky li {
+    margin: 0 15px;
+}
+.menu-sticky a{
+    color: white;
+    text-decoration: none;
+}
+.menu-sticky a:hover{
+    text-decoration: underline;
+}
+.content{
+    height: 2000px;
+    padding:20px;
+}
